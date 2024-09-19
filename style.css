@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Outfit', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: hsl(30, 54%, 90%);
+}
+
+/*Global*/
+
+.procedure-title {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+	color: hsl(14, 45%, 36%);
+}
+
+main {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 5rem;
+}
+
+.container {
+	background-color: hsl(0, 0%, 100%);
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	padding: 2.5rem;
+}
+
+.header {
+	background-color: hsl(0, 0%, 100%);
+	padding: 2.5rem;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+	margin-bottom: -8rem;
+}
+
+.divider {
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+	margin: 1rem 0;
+}
+
+.nutri-divider {
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+	margin: 0.5rem 0;
+}
+
+p,
+ul li,
+ol li,
+span {
+	color: hsl(30, 10%, 34%);
+	font-weight: 500;
+}
+
+/*header*/
+.header .hero-img > img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+.hero-title {
+	margin: 1.5rem 0;
+	font-size: 2.8em;
+	font-weight: 400;
+	font-family: 'Young Serif', serif;
+}
+
+.hero-description {
+	margin-bottom: 2rem;
+}
+
+/*Showcase*/
+
+.showcase {
+	background-color: hsl(330, 100%, 98%);
+	border-radius: 1rem;
+	padding: 1rem 1.5rem;
+	margin: 2rem 0;
+}
+
+.prep-time {
+	color: hsl(332, 51%, 32%);
+	margin-bottom: 1rem;
+}
+
+.list-time li,
+.ingredients-list li {
+	list-style-type: none;
+	margin: 0 0.5rem;
+}
+
+.list-time li::before {
+	width: 2em;
+	height: 2em;
+	content: '•';
+	color: hsl(332, 51%, 32%);
+	font-weight: 900;
+	display: inline-block;
+}
+
+.procedure-title {
+	margin-bottom: 1rem;
+}
+
+.ingredients-list li::before {
+	width: 2em;
+	height: 2em;
+	content: '•';
+	color: hsl(14, 45%, 36%);
+	font-weight: 900;
+	display: inline-block;
+}
+
+.procedure-list li {
+	list-style-position: inside;
+	text-align: justify;
+	margin: 0.5rem 0.5rem;
+}
+
+.procedure-list li::marker {
+	color: hsl(14, 45%, 36%);
+	font-weight: bold;
+}
+
+.list {
+	margin-left: 1rem;
+}
+
+.text {
+	margin-left: 2.1rem;
+	color: hsl(30, 10%, 34%);
+	font-weight: 400;
+}
+
+.stats-description {
+	padding: 1rem 0;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.vitamin {
+	margin-left: 2rem;
+	color: hsl(30, 10%, 34%);
+	font-weight: 500;
+}
+
+.grams {
+	position: absolute;
+	left: 50%;
+	color: hsl(14, 45%, 36%);
+	font-weight: 800;
+}
+
+
+/*Footer*/
+
+footer {
+	margin-top: -4rem;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: rgb(244, 114, 67);
+}
+
+footer a:hover {
+	color: #9c0000;
+}
+
+footer p {
+	color: black;
+}
+
+/*Media Queries*/
+
+@media (max-width: 768px) {
+	main,
+	.header {
+		padding: 0;
+	}
+	.header {
+		padding-bottom: 3rem;
+	}
+
+	.hero-title {
+		font-size: 2.5em;
+		font-weight: 500;
+		padding: 1rem;
+		margin: 0rem;
+	}
+
+	.header .hero-description {
+		font-size: 1.2em;
+		padding: 1rem;
+		margin-top: -1rem;
+	}
+
+	.container,
+	.header .hero-img > img {
+		border-radius: 0;
+	}
+
+	.list {
+		margin-left: 0.5rem;
+	}
+
+	.text {
+		margin: 0;
+	}
+
+	.procedure-title {
+		font-size: 2em;
+	}
+
+	.nutrition-title {
+		margin: 0;
+	}
+}
